@@ -3,7 +3,10 @@ MAINTAINER Krishna Kumar <krishnak@utexas.edu>
 
 RUN apt-get update -y && apt-get upgrade -y
 
-# Install CMake
-RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y clang-format cmake python
+# Install dependencies
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y clang-format-11 cmake cppcheck ninja-build python
+
+# Create symbolic link for clang-format
+RUN ln -s /usr/bin/clang-format-11 /usr/bin/clang-format
 
 RUN /bin/bash "$@"
