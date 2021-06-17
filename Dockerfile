@@ -1,4 +1,4 @@
-FROM quay.io/geoelements/cuda-ubuntu:11.2.2
+FROM nvidia/cuda:11.3.1-runtime-ubuntu20.04
 MAINTAINER Krishna Kumar <krishnak@utexas.edu>
 
 RUN apt-get update -y && apt-get upgrade -y
