@@ -10,7 +10,7 @@
 
 # Using the docker image
 * The docker image can be used from GitHub Container Registry
-* Pull the docker image `docker pull ghcr.io/geoelements/bm-gpu`
+* Pull the docker image `docker pull ghcr.io/geoelements/lbm-gpu`
 * To launch the `geoelements/lbm-gpu`  docker container, run `docker run -ti ghcr.io/geoelements/lbm-gpu:latest /bin/bash`
 
 # To login as root
